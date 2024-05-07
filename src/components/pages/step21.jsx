@@ -59,6 +59,32 @@ function Step21() {
     };
 
     // Function to handle hover over knife1 image
+    const handleKnife3Hover = () => {
+        setKnife3Image('knife32.png');
+
+    };
+
+    // Function to handle hover out from knife1 image
+    const handleKnife3HoverOut = () => {
+        setKnife3Image('knife31.png');
+    };
+
+    // Function to handle click on knife1 image
+    const handleKnife3Click = () => {
+        // Toggle between two images
+        setKnife3Image((prevImage) => {
+            if (prevImage === 'knife32.png') {
+                setText('The answer is wrong. Try again!');
+                return 'knife33.png';
+            } else {
+                setText('In this step, you need to first inject the adhesive into the interior of the mural for bonding, then cover it with moisture-proof paper, and begin reattaching the Qi Jia part of the mural. Do you know which knife below is needed for reattachment?');
+                return 'knife31.png';
+            }
+        });
+    };
+
+
+    // Function to handle hover over knife1 image
     const handleKnife2Hover = () => {
         setKnife2Image('knife22.png');
 
@@ -183,17 +209,17 @@ function Step21() {
                 }}
             >
                 <Stack spacing={1} direction="column" alignItems="center" justifyContent="space-between">
-                    <div style={{ height: '40px' }}>
+                    <div style={{ height: '100px', overflowY: 'scroll'  }}>
                         <Typography variant="p" component="p" sx={{ color: 'white', margin: '20px', marginBottom: '0px' }}>
                             {text}
                         </Typography>
 
                     </div>
 
-                    <div style={{ display: 'flex' }}>
+                    <div style={{ display: 'flex',width:"70%"}}>
                         <img
                             src={knife1Image}
-                            style={{ height: '180px',cursor:'pointer' }}
+                            style={{ width: '33%',cursor:'pointer' }}
                             onMouseEnter={handleKnife1Hover}
                             onMouseLeave={handleKnife1HoverOut}
                             onClick={handleKnife1Click}
@@ -202,12 +228,18 @@ function Step21() {
                         ></img>
                         <img
                             src={knife2Image}
-                            style={{ height: '180px',cursor:'pointer' }}
+                            style={{ width: '33%',cursor:'pointer' }}
                             onMouseEnter={handleKnife2Hover}
                             onMouseLeave={handleKnife2HoverOut}
                             onClick={handleKnife2Click}
                         />
-                        <img src="knife31.png" style={{ height: '180px' }}></img>
+                       <img
+                            src={knife3Image}
+                            style={{ width: '33%',cursor:'pointer' }}
+                            onMouseEnter={handleKnife3Hover}
+                            onMouseLeave={handleKnife3HoverOut}
+                            onClick={handleKnife3Click}
+                        />
 
                     </div>
                     <Button

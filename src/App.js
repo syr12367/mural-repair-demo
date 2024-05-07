@@ -12,7 +12,7 @@ import Step22 from './components/pages/step22';
 import Step31 from './components/pages/step31';
 import Step4 from './components/pages/step4';
 
-
+import Fullstory from './components/pages/fullstory';
 
 
 import Box from '@mui/material/Box';
@@ -35,6 +35,7 @@ function App() {
           <Route path="/step22" element={<Step22 />} />
           <Route path="/step31" element={<Step31 />} />
           <Route path="/step4" element={<Step4 />} />
+          <Route path="/fullstory" element={<Fullstory />} />
 
 
 

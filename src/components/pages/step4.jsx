@@ -140,7 +140,7 @@ function Step4() {
         >
           <Stack spacing={1} direction="column" alignItems="center" justifyContent="space-between" style={{opacity:showText,transition:'0.4s ease-in-out'}}>
             <div style={{height:'100px'}}>
-            <Typography variant="p" component="p" sx={{color:'white',margin:'20px',opacity:showText,transition:'0.4s ease-in-out'}}>
+            <Typography variant="p" component="p" sx={{color:'white',margin:'30px',opacity:showText,transition:'0.4s ease-in-out'}}>
             Congratulations on completing the repair process!
 It's time to see the full story.
           </Typography>
@@ -156,7 +156,7 @@ It's time to see the full story.
                     }
                   }}
                 >
-                  <div style={{color:'black',margin:'0',fontWeight: 'bold' }} onClick={() => navigate('/page-2')}>PRESS TO SEE THE FULL STORY!</div>
+                  <div style={{color:'black',margin:'0',fontWeight: 'bold' }} onClick={() => navigate('/fullstory')}>PRESS TO SEE THE FULL STORY!</div>
                 </Button>
                 
               
