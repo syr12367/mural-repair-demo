@@ -146,7 +146,7 @@ function Step1() {
           <Stack spacing={1} direction="column" alignItems="center" justifyContent="space-between">
             <div style={{height:'100px'}}>
             <Typography variant="p" component="p" sx={{color:'white',margin:'20px'}}>
-            During this step, you need to clean the Qi Jia and surface dust off the mural to prevent contamination during restoration. 
+            During this step, you need to clean the surface dust off the mural to prevent contamination during restoration. 
             
                 <span style={{ color: '#D5C38C', fontWeight: 'bold' }}> Press the brush on the bottom </span>
                  to start dust removal.
