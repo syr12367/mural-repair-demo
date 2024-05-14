@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 
+import React, { useEffect } from 'react';
+
 import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 import NewPage from './components/pages/page1'; // 导入 NewPage 组件
@@ -23,6 +25,8 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 
 function App() {
+  
+
   return (
     <Router>
       <div className="App" >
